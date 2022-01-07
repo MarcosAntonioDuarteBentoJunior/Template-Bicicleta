@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Permanent+Marker&display=swap');
+
+*{
+    font-family: 'Permanent Marker', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+small{
+    background-color: aliceblue !important;
+}
+
+span, i{
+    color: orangered;
+}
+
+i{
+    cursor: pointer;
+}
+
+#topnav {
+    height: 60px !important;
+}
+
+.video-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    overflow: hidden;
+    object-fit: cover;
+    -o-object-fit: cover;
+    height: 92vh;
+    width: 100vw;
+}
+
+nav{
+    position: absolute !important;
+    top: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.47) !important;
+}
+
+nav ul a{
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orangered;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+nav ul a:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar li a{
+    color: orangered !important;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+.navbar i{
+    font-size: x-large;
+}
+
+.navbar-brand img{
+    width: 100px;
+    height: 60px;
+}
+
+.align-self-center{
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    right: 25%;
+    left: 25%;
+}
+
+main{
+    position: relative;
+    margin-top: 97vh;
+}
+
+#linhas img, #best-sellers img, #novidades img{
+    height: 250px;
+}
+
+
+#best-sellers .carousel-indicators, #novidades .carousel-indicators{
+    position: absolute;
+    bottom: -60px;
+}
+
+#best-sellers .carousel-indicators button, #novidades .carousel-indicators button, #feedback .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+#promo{
+    height: 500px;
+    background-image: url('/img/banner-promo.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#promo .day, .hour, .minute, .second{
+    color: orangered;
+}
+
+#feedback{
+    height: 500px;
+    background-image: url('/img/banner-feedback.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#feedback img{
+    width: 100px;
+    height: 100px;
+}
+
+#feedback i{
+    color: goldenrod;
+}
+
+#data{
+    background-color: #101010;
+}
+
+#contact input{
+    border: 0;
+    border-bottom: 1px solid #101010;
+    border-radius: 0;
+}
+
+#contact input:focus{
+    box-shadow: none;
+}
+
+#socialMedia{
+    background-color: #101010;
+}
+
+#socialMedia a{
+    text-decoration: none;
+}
+
+
+
+
